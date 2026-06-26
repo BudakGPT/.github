@@ -1,0 +1,50 @@
+name: Roll up org dashboard
+
+# Rebuilds profile/README.md from every repo tagged `competition` in the org.
+on:
+  schedule:
+    - cron: "27 0 * * *"     # daily ~00:27 UTC
+  workflow_dispatch:          # manual run
+  push:
+    branches: [main]
+    paths:
+      - scripts/rollup.py
+      - .github/workflows/rollup.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rollup
+  cancel-in-progress: true
+
+jobs:
+  rollup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install pyyaml
+
+      - name: Build dashboard
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ORG: ${{ github.repository_owner }}
+        run: python scripts/rollup.py
+
+      - name: Commit changes if any
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain profile/README.md)" ]; then
+            git add profile/README.md
+            git commit -m "chore: refresh org dashboard"
+            git push
+          else
+            echo "No changes."
+          fi
