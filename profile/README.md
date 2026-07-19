@@ -17,11 +17,11 @@
 
 | Active | Nearest deadline | Overall progress |
 | :---: | :---: | :---: |
-| **2** | **AI Innovation Challenge**<br><sub>0 days (2026-07-18)</sub> | `░░░░░░░░░░` 0%<br><sub>0 of 9 deliverables</sub> |
+| **2** | None pending | `░░░░░░░░░░` 0%<br><sub>0 of 9 deliverables</sub> |
 
 </div>
 
-<div align="center"><sub>2 tracked &nbsp;·&nbsp; updated 2026-07-18</sub></div>
+<div align="center"><sub>2 tracked &nbsp;·&nbsp; updated 2026-07-19</sub></div>
 
 ---
 
@@ -30,7 +30,7 @@
 | Competition | Status | Next milestone | Progress | Code |
 | :--- | :--- | :--- | :--- | :--- |
 | **[APAC Stellar Hackathon](https://github.com/BudakGPT/apac-stellar-hackathon)**<br><sub>Stellar x Rise In</sub> | Active | Overdue: Submission Deadline | `░░░░░░░░░░` 0% | Private |
-| **[AI Innovation Challenge](https://github.com/BudakGPT/AIInnovationChallenge-COMPFEST18)**<br><sub>COMPFEST 18</sub> | Active | Today: Registration Closes | `░░░░░░░░░░` 0% | Private |
+| **[AI Innovation Challenge](https://github.com/BudakGPT/AIInnovationChallenge-COMPFEST18)**<br><sub>COMPFEST 18</sub> | Active | Overdue: Registration Closes | `░░░░░░░░░░` 0% | Private |
 
 <!-- AUTO:END -->
 
