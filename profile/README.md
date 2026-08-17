@@ -21,7 +21,7 @@
 
 </div>
 
-<div align="center"><sub>2 tracked &nbsp;·&nbsp; updated 2026-08-16</sub></div>
+<div align="center"><sub>2 tracked &nbsp;·&nbsp; updated 2026-08-17</sub></div>
 
 ---
 
